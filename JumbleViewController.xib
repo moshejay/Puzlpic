@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1536" defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JumbleViewController">
+            <connections>
+                <outlet property="imageNameLbl" destination="uKd-MF-xxz" id="3c8-Ge-vZx"/>
+                <outlet property="imageNameTxtFld" destination="283-Rm-LJW" id="D4V-Tn-Alz"/>
+                <outlet property="myToolbar" destination="68" id="98"/>
+                <outlet property="passedImage" destination="30" id="82"/>
+                <outlet property="quitBtn" destination="69" id="93"/>
+                <outlet property="saveBtn" destination="70" id="94"/>
+                <outlet property="showHiddenTilesBtn" destination="71" id="95"/>
+                <outlet property="showOrigPicBtn" destination="85" id="100"/>
+                <outlet property="theToolBar" destination="68" id="35M-m9-lfD"/>
+                <outlet property="view" destination="1" id="81"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" id="30">
+                    <rect key="frame" x="52" y="80" width="174" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.850000011920929" tag="800" contentMode="scaleToFill" id="68">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem tag="801" systemItem="stop" id="69">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="DoQuitButton:" destination="-1" id="88"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="aOd-Kb-q4u"/>
+                        <barButtonItem tag="802" systemItem="bookmarks" id="70">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="DoSaveButton:" destination="-1" id="89"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6L2-LX-U68"/>
+                        <barButtonItem tag="803" systemItem="search" id="71">
+                            <color key="tintColor" red="0.0" green="0.0026231751824817517" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="DoShowButton:" destination="-1" id="90"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="47h-fI-26U"/>
+                        <barButtonItem tag="804" image="803-b-pagecurl.png" id="85">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="DoPeekButton:" destination="-1" id="91"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TEq-vX-QzU"/>
+                        <barButtonItem systemItem="action" id="OnV-VH-hGL">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="DoForwardPic:" destination="-1" id="38B-9Z-Nq1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="87"/>
+                        <barButtonItem tag="806" image="89-QUESTION.png" style="plain" id="86">
+                            <color key="tintColor" red="1" green="0.23063982664233548" blue="0.19388686131386862" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="DoHelpButton:" destination="-1" id="92"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="barTintColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                </toolbar>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uKd-MF-xxz">
+                    <rect key="frame" x="37" y="70" width="196" height="88"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">  Enter the Image Name:
+
+
+
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" id="283-Rm-LJW">
+                    <rect key="frame" x="58" y="98" width="160" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="send"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="yt3-MB-E8G"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="803-b-pagecurl.png" width="31" height="29"/>
+        <image name="89-QUESTION.png" width="20" height="20"/>
+    </resources>
+</document>

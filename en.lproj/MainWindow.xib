@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1536" defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
+            <connections>
+                <outlet property="delegate" destination="3" id="53"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <customObject id="3" userLabel="AppDelegate" customClass="AppDelegate">
+            <connections>
+                <outlet property="navController" destination="54" id="65"/>
+            </connections>
+        </customObject>
+        <navigationController id="54">
+            <extendedEdge key="edgesForExtendedLayout"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <nil key="simulatedDestinationMetrics"/>
+            <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="56">
+                <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="barTintColor" red="0.17957658360000001" green="0.94207270840000001" blue="1" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+            </navigationBar>
+            <viewControllers>
+                <viewController id="50" userLabel="MyViewController" customClass="MyViewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="72">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="74">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="76">
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="cameraAction:" destination="50" id="81"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EMS-ME-5vR"/>
+                                    <barButtonItem image="44-shoebox.png" id="75">
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="photoLibraryAction:" destination="50" id="119"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dnF-tT-nMP"/>
+                                    <barButtonItem image="97-puzzle.png" id="127">
+                                        <color key="tintColor" red="1" green="0.23063982659999999" blue="0.19388686129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="jumblePic:" destination="50" id="128"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="agw-FW-580"/>
+                                    <barButtonItem systemItem="bookmarks" id="162">
+                                        <color key="tintColor" red="1" green="0.23063982659999999" blue="0.19388686129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="preJumbledPic:" destination="50" id="163"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Uuq-oT-vdM"/>
+                                    <barButtonItem image="40-inbox.png" id="bfM-Ve-fqy">
+                                        <color key="tintColor" red="0.93445073341836737" green="0.077819659656020099" blue="0.93412828808059123" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="DoSavedReceivedFiles:" destination="50" id="QKZ-xV-3Gt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7xR-Pg-Kag"/>
+                                    <barButtonItem systemItem="action" id="PBv-lu-ZHM">
+                                        <connections>
+                                            <action selector="DoSavedFiles:" destination="50" id="Hl8-qW-4hP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.22237858699999999" green="0.95707887410000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="136">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="140">
+                                <rect key="frame" x="20" y="20" width="280" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="   Welcome to ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
+                                            <font key="NSOriginalFont" size="18" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="PuzlPic">
+                                        <attributes>
+                                            <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="26" name="MarkerFelt-Thin"/>
+                                            <font key="NSOriginalFont" size="18" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="147">
+                                <rect key="frame" x="20" y="20" width="280" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content"> 
+                     Let the fun 
+                         begin!!
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="Papyrus"/>
+                                            <font key="NSOriginalFont" size="20" name="Papyrus"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="156">
+                                <rect key="frame" x="20" y="161" width="280" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">                   Created by M&amp;M&amp;R
+                        Copyright 2014 
+              www.SolveITbyDesign.com
+
+ Please wait while we load...</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Papyrus"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53725492949999998" green="0.76470595600000002" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="PuzlPic" id="58">
+                        <barButtonItem key="leftBarButtonItem" image="20-gear2.png" id="165">
+                            <color key="tintColor" red="0.43889712591240876" green="0.44077896897810132" blue="0.42997262773722628" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="DoSettings:" destination="50" id="172"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="168">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="helpAction:" destination="50" id="173"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="136" id="137"/>
+                        <outlet property="myToolbar" destination="74" id="126"/>
+                        <outlet property="welcome1" destination="140" id="144"/>
+                        <outlet property="welcome2" destination="147" id="161"/>
+                        <outlet property="welcome4" destination="156" id="160"/>
+                    </connections>
+                </viewController>
+            </viewControllers>
+        </navigationController>
+    </objects>
+    <resources>
+        <image name="20-gear2.png" width="26" height="28"/>
+        <image name="40-inbox.png" width="24" height="24"/>
+        <image name="44-shoebox.png" width="24" height="22"/>
+        <image name="97-puzzle.png" width="28" height="25"/>
+    </resources>
+</document>
